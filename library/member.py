@@ -19,7 +19,7 @@ class Member:
     def clear_borrowed_books(self):
         self.__borrowed_books.clear()  # Clear the borrowed books list
 
-    def borrow_book(self, book_to_borrow):
+    def borrow_book(self,book_to_borrow):
         if book_to_borrow.is_borrowed:
             print(f"The book '{book_to_borrow.title}' is already borrowed.")
         else:

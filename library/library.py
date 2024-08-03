@@ -1,3 +1,4 @@
+#from library.member import Member
 class Library:
     def __init__(self):
         self.members_list = []
@@ -70,26 +71,20 @@ class Library:
 
     def borrow_book(self, member_id, isbn):
         member = self.search_member(member_id)
-        book = self.search_book(isbn)
+        print('member', member)
 
-        if member is None:
-            print(f'No Member found with id {member_id}'
-                  f' ,sorry you can not borrow this book')
+        book = self.search_book(isbn)
+        print('book', book)
+
+        if member and book:
+            return member.borrow_book(book)
         else:
-            if book is None:
-                print(f'No book found with id {isbn},'
-                      f'sorry we dont rent this book')
-            else:
-                member.borrow_book(book)
+            print(f'No book or member found with id {isbn}')
 
     def return_book(self, member_id, isbn):
         member = self.search_member(member_id)
         book = self.search_book(isbn)
-
-        if member is None:
-            print(f'No Member found with id {member_id}')
+        if member and book:
+            return member.return_book(book)
         else:
-            if book is None:
-                print(f'No book found with id {isbn}')
-            else:
-                member.return_book(book)
+            print(f'No book or member found with id {isbn}')
