@@ -26,3 +26,28 @@ test/
 .coverage                    # Coverage report for unit tests
 README.md                    # Project documentation
 main.py                      # Entry point for running the Library Management System
+
+
+## Features
+
+- **Book Management:** Add, remove, search, and list books in the library's inventory.
+- **Member Management:** Add, remove, search, and list members.
+- **Borrowing and Returning:** Members can borrow and return books, with borrowing limits enforced for different member types.
+- **Specialized Members:** Two types of members, `StudentMember` and `TeacherMember`, with different borrowing limits.
+
+## Getting Started
+
+### Prerequisites
+
+- Python 3.9.18 or later
+- Git (for version control)
+- A code editor (e.g., VS Code)
+
+### Installation
+
+1. **Clone the repository:**
+   ```bash
+   git clone https://github.com/RezwanHassanKhan/LibraryManagementSystem.git
+   cd LibraryManagementSystem
+
+   
