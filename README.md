@@ -1,15 +1,19 @@
 
-# Library Management System
+# 📚 Library Management System
 
 ## Overview
 
 The **Library Management System** is a Python-based application designed to manage and automate the basic functions of a library. The system handles book inventory, member management, book borrowing, and returning processes. It also includes unit tests to ensure the robustness and reliability of the codebase.
 
+![Python](https://img.shields.io/badge/Python-3.9.18-blue)
+![License](https://img.shields.io/badge/License-MIT-yellow.svg)
+![GitHub Actions](https://github.com/RezwanHassanKhan/LibraryManagementSystem/workflows/Python%20Tests/badge.svg)
+
 ## Project Structure
 
 The project is organized as follows:
 
-```
+```plaintext
 .github/
 └── workflows/
     └── test_lms.yaml            # GitHub Actions workflow for running tests
@@ -31,20 +35,20 @@ README.md                        # Project documentation
 main.py                          # Entry point for running the Library Management System
 ```
 
-## Features
+## 🚀 Features
 
 - **Book Management:** Add, remove, search, and list books in the library's inventory.
 - **Member Management:** Add, remove, search, and list members.
 - **Borrowing and Returning:** Members can borrow and return books, with borrowing limits enforced for different member types.
 - **Specialized Members:** Two types of members, `StudentMember` and `TeacherMember`, with different borrowing limits.
 
-## Getting Started
+## 🛠️ Getting Started
 
 ### Prerequisites
 
-- Python 3.9.18 or later
-- Git (for version control)
-- A code editor (e.g., VS Code)
+- ![Python](https://img.shields.io/badge/Python-3.9.18-blue)
+- ![Git](https://img.shields.io/badge/Git-2.30.0-brightgreen)
+- ![VS Code](https://img.shields.io/badge/VS%20Code-1.56.2-blue)
 
 ### Installation
 
@@ -68,7 +72,7 @@ main.py                          # Entry point for running the Library Managemen
    python main.py
    ```
 
-### Running Tests
+### 🧪 Running Tests
 
 The project includes unit tests to ensure the code functions as expected. Tests are located in the `test/` directory and can be run using the following command:
 
@@ -76,11 +80,11 @@ The project includes unit tests to ensure the code functions as expected. Tests 
 python -m unittest discover -s test -p "*.py"
 ```
 
-### Continuous Integration
+### ⚙️ Continuous Integration
 
 The project uses **GitHub Actions** for continuous integration. The workflow configuration is located in `.github/workflows/test_lms.yaml`. This workflow automatically runs the unit tests on every push or pull request to the `main` branch.
 
-### Coverage Report
+### 📊 Coverage Report
 
 The coverage report for the unit tests can be generated using the `coverage` tool:
 
@@ -91,15 +95,13 @@ coverage report -m
 
 This will provide a detailed report showing which lines of code are covered by the tests.
 
-## Usage
+## 📚 Usage
 
 - **Add Books:** You can add books to the library by specifying the title, author, ISBN, and whether the book is currently borrowed.
 - **Manage Members:** You can add new members (either students or teachers) and manage their borrowing activities.
 - **Borrow and Return Books:** Members can borrow books if they haven't exceeded their borrowing limit. The system will update the status of the book accordingly.
 
 ### Example
-
-Here is a basic usage example to demonstrate how the system works:
 
 ```python
 from library.book import Book
@@ -128,10 +130,10 @@ library_manager.list_books()
 library_manager.return_book(1, "9780451524935")
 ```
 
-## License
+## 📝 License
 
 This project is licensed under the MIT License. See the [LICENSE](LICENSE) file for more details.
 
-## Contributions
+## 🤝 Contributions
 
 Contributions, issues, and feature requests are welcome! Feel free to check the [issues page](https://github.com/RezwanHassanKhan/LibraryManagementSystem/issues) if you want to contribute.
